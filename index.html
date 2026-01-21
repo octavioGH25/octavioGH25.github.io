@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octavio Landa | Seguridad de la Información & Datos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Segoe+UI:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- ESTILO 'CYBER-SECURITY' MINIMALISTA --- */
+        :root {
+            --bg-deep: #050a10;      /* Negro profundo */
+            --bg-card: #0d1219;      /* Gris azulado oscuro */
+            --text-main: #c9d1d9;    /* Blanco suave */
+            --accent-green: #00ff9d; /* Verde Hacker */
+            --accent-blue: #2f81f7;  /* Azul GitHub/Tech */
+            --border: #30363d;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: radial-gradient(circle at top, #161b22 0%, #050a10 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1 { 
+            font-family: 'Segoe UI', sans-serif; 
+            font-weight: 300; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            margin: 0;
+            color: var(--text-main);
+        }
+        
+        .role {
+            color: var(--accent-blue);
+            font-family: 'Roboto Mono', monospace; /* Toque de código */
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section { margin-bottom: 4rem; }
+
+        .section-title {
+            color: var(--accent-green);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        /* GRID DE PROYECTOS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .card h3 { margin-top: 0; color: #fff; font-weight: 600; }
+        
+        .tags {
+            margin-top: 1rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.75rem;
+            color: #8b949e;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: rgba(56, 139, 253, 0.15);
+            color: var(--accent-blue);
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* BOTONES */
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        
+        .btn:hover {
+            background: rgba(0, 255, 157, 0.1);
+        }
+
+        /* FORMACIÓN */
+        .edu-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1rem;
+            border-left: 2px solid var(--border);
+        }
+        
+        .edu-date {
+            font-family: 'Roboto Mono', monospace;
+            color: #8b949e;
+            font-size: 0.85rem;
+            min-width: 100px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #484f58;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="width: 100px; height: 100px; background: #21262d; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--accent-green);">
+            <span style="font-size: 2rem;">OL</span> </div>
+        <h1>Sr. Octavio Landa</h1>
+        <div class="role">&lt; Seguridad de la Información & Auditoría de Datos /&gt;</div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2 class="section-title">01. PROYECTOS DE AUTORÍA</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Cybersecurity Community App</h3>
+                    <p style="font-size: 0.95rem; color: #8b949e;">
+                        Plataforma digital diseñada para centralizar recursos de seguridad informática. Desarrollo Fullstack con enfoque en protección de datos.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Security Ops</span>
+                    </div>
+                    <a href="#" class="btn">Ver Código Seguro</a>
+                </div>
+
+                <div class="card">
+                    <h3>Sistema de Gestión de Activos (IMSS)</h3>
+                    <p style="font-size: 0.95rem; color: #8b949e;">
+                        Solución de auditoría para inventarios capitalizables. Optimización de procesos burocráticos mediante minería de datos y automatización.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Data Audit</span>
+                        <span class="tag">Process Mining</span>
+                        <span class="tag">Gov Tech</span>
+                    </div>
+                    <a href="#" class="btn">Ver Detalles</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">02. LABORATORIO DE DATA SCIENCE</h2>
+            <div class="card" style="border-left: 4px solid var(--accent-blue);">
+                <h3>Repositorio de Especialización</h3>
+                <p style="color: #8b949e;">
+                    Colección técnica de 16 Sprints intensivos abarcando todo el ciclo de vida del dato: desde la limpieza (ETL) hasta modelos predictivos de Machine Learning y visualización ejecutiva.
+                </p>
+                <ul style="color: #c9d1d9; font-size: 0.9rem; margin-top: 1rem; list-style: none; padding: 0;">
+                    <li>🔹 Sprint 13: Retención de Clientes (Model Fitness)</li>
+                    <li>🔹 Sprint 07: Web App de Coches (Streamlit)</li>
+                    <li>🔹 Sprint 05: Validación Estadística (Megaline)</li>
+                </ul>
+                <a href="https://github.com/octavioGH25/Especializacion_Data_Science_Octavio" class="btn" style="border-color: var(--accent-blue); color: var(--accent-blue);">
+                    Explorar Repositorio Completo ➔
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">03. REGISTRO ACADÉMICO</h2>
+            
+            <div class="edu-item">
+                <div class="edu-date">2025 - 2026</div>
+                <div>
+                    <h4 style="margin: 0; color: #fff;">Data Science Bootcamp</h4>
+                    <div style="color: var(--accent-green); font-size: 0.9rem;">TripleTen</div>
+                    <p style="font-size: 0.85rem; color: #8b949e; margin-top: 0.5rem;">
+                        Especialización práctica en análisis de grandes volúmenes de datos, SQL, Python y estadística inferencial.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Diseñado con Integridad y Código Limpio. Octavio Landa © 2026.</p>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/octavioGH25" style="color: #8b949e; text-decoration: none; margin: 0 10px;">GitHub</a>
+                <a href="mailto:tucorreo@ejemplo.com" style="color: #8b949e; text-decoration: none; margin: 0 10px;">Email</a>
+                <a href="#" style="color: #8b949e; text-decoration: none; margin: 0 10px;">LinkedIn</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
